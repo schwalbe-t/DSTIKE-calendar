@@ -8,8 +8,9 @@ namespace display {
     const uint8_t ADDRESS = 0x3C;
     const int SDA_PIN = D1; // pin 5
     const int SCL_PIN = D2; // pin 4
-    const uint32_t WIDTH = 128;
-    const uint32_t HEIGHT = 64;
+    const int WIDTH = 128;
+    const int HEIGHT = 64;
+    const int LINE_HEIGHT = 12;
 
     SH1106Wire g = SH1106Wire(ADDRESS, SDA_PIN, SCL_PIN);
     
